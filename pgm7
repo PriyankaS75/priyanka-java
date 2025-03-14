@@ -1,0 +1,25 @@
+public class Program7 
+{
+    public static void main(String[] args)
+    {
+        int num=12;
+        if(num%2==0 && num% 3==0)
+        {
+            System.out.println("java");
+        }
+        else if(num%2==0)
+        {
+            System.out.println("Python");
+        }
+        else
+        {
+            System.out.println("c/c++");
+            
+            
+           
+        }
+    
+        
+    }
+    
+}
