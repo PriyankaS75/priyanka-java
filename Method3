@@ -1,0 +1,19 @@
+package Smvitm;
+//without argument and with returntype
+public class Method3 
+{
+    static int disp(){
+        return 45;
+    }
+    static char print(){
+        return 'a';
+    }
+    public static void main(String[] args){
+        System.out.println("program start");
+        System.out.println(disp());
+        System.out.println(print());
+        System.out.println("program end");
+    }
+            
+    
+}
