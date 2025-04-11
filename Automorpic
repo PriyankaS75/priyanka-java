@@ -1,0 +1,20 @@
+package Problemsoving;
+public class Automorpic {
+    public static void main(String[] args){
+        int n=5;
+        int sqrt=n*n;
+        if(sqrt%10==n)
+        {
+            System.out.println("AN");
+        }
+        else
+        {
+            System.out.println("NAN");
+            
+    
+            
+    
+        }
+    }
+    
+}
