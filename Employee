@@ -1,0 +1,19 @@
+package Module2;
+public class Employee{
+    int id = 101;
+    String des = "Manger";
+    double sal = 12345.66;
+    void work(){
+        System.out.println("Working");
+    }
+    public static void main(String[] args){
+        Employee e=new Employee();
+        System.out.println(e.id);
+        System.out.println(e.des);
+        System.out.println(e.sal);
+        e.work();
+                
+               
+    }
+    
+}
