@@ -1,0 +1,17 @@
+package Module2;
+public class Employee2 {
+    static int id = 101;
+    static String des = "Manger";
+    static void work()
+    {
+        System.out.println("working");
+    }
+    public static void main(String[] args){
+        Employee2 e=new Employee2();
+        System.out.println(Employee2.id);
+        System.out.println(Employee2.des);
+        Employee2.work();
+        
+    }
+    
+}
