@@ -1,0 +1,21 @@
+package testarray;
+public class Test1 {
+    public static void main(String[] args){
+        int[]arr= {11,13,9,96,99,45,4};
+        int elementTOFind = 44;
+        boolean Found = false;
+        for(int num : arr){
+            if(num==elementTOFind){
+                Found=true;
+                break;
+            }
+        }
+        if(Found){
+            System.out.println(elementTOFind+ "is paresent in the array.");
+        }else{
+            System.out.println(elementTOFind+ "is not paresent in the array.");
+        }
+    }
+    
+}
+          
