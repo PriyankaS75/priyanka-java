@@ -1,0 +1,28 @@
+package Hotel;
+public class Amazon {
+    void payment()
+    {
+        System.out.println("COD");
+    }
+    void payment(String name)
+    {
+        System.out.println("UPI payment");
+    }
+    void payment(long cardnumber,int otp)
+    {
+        System.out.println("card payment");
+    }
+    void payment(String username,String possword)
+    {
+        System.out.println("Net Banking");
+    }
+    public static void main(String[] args){
+        Amazon a=new Amazon();
+        a.payment();
+        a.payment("name");
+        a.payment(12343217595L,6675);
+        a.payment("user123","pass**");
+    
+    }
+    
+}
