@@ -1,0 +1,38 @@
+package com;
+public interface Jpraticaicals {
+    void javaTraining();
+    
+}
+
+
+package com;
+public interface Tpraticaicals {
+    void testingTraining();
+    
+}
+
+package com;
+public class Bpracticals {
+    void training(){
+        System.out.println("training on technologies");
+    }
+}
+
+
+package com;
+public class Training extends  Bpracticals implements Jpraticaicals,Tpraticaicals {
+    public void javaTraining() {
+        System.out.println("Training student on java");
+    }
+    public void testingTraining()
+    {
+        System.out.println("Training students on Manual & Automation Training ");
+    }
+    public static void main(String[] args){
+        Training t=new Training();
+        t.training();
+        t.javaTraining();
+        t.testingTraining();
+        
+    }
+}
