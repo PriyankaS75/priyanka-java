@@ -1,0 +1,47 @@
+public class P1 {
+        int[] stack;
+        int capacity;
+        int top;
+        P1(int size) {
+            stack=new int[size];
+            capacity=size;
+            top=-1;
+    }
+        void push(int x) {
+            if(top==capacity-1) {
+                System.out.println("Overflow state");
+            }
+            else {
+                top++;
+                stack[top]=x;
+                System.out.println(x+ "Inserted" );
+            }
+        }
+        boolean isEmpty() {
+            if(top==-1) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        } 
+        void pop() {
+            if(isEmpty()) {
+                System.out.println("Underflow");
+            }
+            else {
+                System.out.println(stack[top]+"deleted");
+                top--;
+            }
+        }
+        public static void main(String[] args) {
+            P1 p=new P1(3);
+            p.push(10);
+            p.push(20);
+            p.push(30);
+            p.push(40);
+            System.out.println(p.isEmpty());
+            p.pop();
+            p.pop();
+        }
+}
