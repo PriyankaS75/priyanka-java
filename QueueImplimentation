@@ -1,0 +1,66 @@
+package queueimplementation;
+public class Queue {
+    int size = 5;
+    int[] Q = new int[size];
+    int front = -1;
+    int rear = -1;
+    void enQueue(int x)
+    {
+        if(rear == size-1)
+        {
+            System.out.println("Queue is full");
+        }
+        else
+        {
+            if(front==-1)
+            {
+                front = 0;
+            }
+            rear++;
+            Q[rear] = x;
+            System.out.println(x+" inserted into the queue");
+        }
+    }
+    void deQueue()
+    {
+        if(front == -1)
+        {
+            System.out.println("Queue is empty");
+        }
+        else if(front==rear)
+        {
+            System.out.println(Q[front]+" deleted");
+            front = -1;
+            rear = -1;
+            
+        }
+        else
+        {
+            System.out.println(Q[front]+" deleted");
+            front++;
+        }
+    }
+    public static void main(String[] args) {
+        QueueImplementation q = new QueueImplementation();
+        q.enQueue(10);
+        q.enQueue(20);
+        q.enQueue(30);
+        q.enQueue(40);
+        q.enQueue(50);
+        q.enQueue(60);
+        q.enQueue(70);
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        q.deQueue();
+        
+    }
+    
+}
+
+    
+
