@@ -1,0 +1,64 @@
+Type costing two type 
+
+1.upcasting
+
+package javaconversion;
+
+public class Father {
+	int x=10;
+}
+
+
+package javaconversion;
+
+public class son extends Father{
+	int y=20;
+
+}
+
+
+package javaconversion;
+
+public class upcasting {
+	public static void main(String[] args) {
+		Father f = new son();
+		System.out.println(f.x);
+		
+		
+	}
+
+}
+
+
+
+2.Downcosting
+
+package javaconversion;
+
+public class Mom {
+	String name = "Dinga";
+	
+}
+
+
+package javaconversion;
+
+public class Daughter extends Mom{
+	int age = 30;
+	
+}
+
+
+package javaconversion;
+
+public class Downcosting {
+	public static void main(String[] args) {
+		Mom m=new Daughter();
+		System.out.println(m.name);
+		
+		Daughter d=(Daughter)m;
+		System.out.println(d.name);
+		System.out.println(d.age);
+		
+				
+	}
