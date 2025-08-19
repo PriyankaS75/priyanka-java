@@ -1,0 +1,32 @@
+package javaconversion;
+
+public class Student {
+	private int age;
+	public void setAge(int age) 
+	{
+		this.age=age;
+	}
+	public int getAge()
+	{
+		return this.age;
+	
+	
+	}
+
+}
+
+
+package javaconversion;
+
+public class Teststudent {
+	public static void main(String[] args){
+		Student s=new Student();
+		s.setAge(20);
+		System.out.println(s.getAge());
+		
+		
+
+		
+	}
+
+}
