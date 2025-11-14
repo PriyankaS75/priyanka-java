@@ -1,0 +1,45 @@
+package doublelinkedlist;
+public class Main2 {
+    String data;
+     Main2 next;
+     Main2 prev;
+
+    Main2(String data) {
+        this.data = data;
+    }
+
+    public static void main(String[] args) {
+         Main2 A = new  Main2("A");
+         Main2 B = new Main2("B");
+         Main2 C = new  Main2("C");
+        Main2 D = new  Main2("D");
+
+        A.next = B;
+        B.next = C;
+        C.next = D;
+        D.next = A;
+
+        A.prev = D;
+        B.prev = A;
+        C.prev = B;
+        D.prev = C;
+
+        
+        System.out.print("Forward: ");
+         Main2 i = A;
+        do {
+            System.out.print(i.data + "->");
+            i = i.next;
+        } while (i != A);
+        System.out.println();
+
+        
+        System.out.print("Backward: ");
+         Main2 j = D;
+        do {
+            System.out.print(j.data + "->");
+            j = j.prev;
+        } while (j != D);
+        System.out.println();
+    }
+}
