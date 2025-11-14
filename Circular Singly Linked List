@@ -1,0 +1,33 @@
+package singlylinkedlist1;
+public class main2 {
+    String data;
+    main2 next;
+
+    main2(String data) {
+        this.data = data;
+    }
+
+    public static void main(String[] args) {
+       main2 A = new  main2("A");
+        main2 B = new  main2("B");
+        main2 C = new  main2("C");
+        main2 D = new  main2("D");
+
+   
+        A.next = B;
+        B.next = C;
+        C.next = D;
+        D.next = A; 
+
+         main2 i = A;
+        System.out.print("Circular Singly Linked List: ");
+        do {
+            System.out.print(i.data + "->");
+            i = i.next;
+        } while (i != A);
+        System.out.println();
+    }
+}
+
+    
+
