@@ -1,0 +1,33 @@
+package singlylinkedlist1;
+public class main1 {
+   
+    float data;
+    main1 next;
+
+    main1(float data) {
+        this.data = data;
+    }
+
+    public static void main(String[] args) {
+        main1 head = new main1(10.1f);
+        main1 second = new main1(10.2f);
+        main1 tail = new main1(10.3f);
+
+     
+        head.next = second;
+        second.next = tail;
+        tail.next = null; 
+
+       
+        main1 i = head;
+        System.out.print("Singly Linked List: ");
+        while (i != null) {
+            System.out.print(i.data + "->");
+            i = i.next;
+        }
+        System.out.println();
+    }
+}
+
+    
+
